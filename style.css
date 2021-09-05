@@ -1,0 +1,38 @@
+h3
+{
+    font-size: 25px !important;
+    animation-name: borderAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.btn-success:hover
+{
+    background-color:red;
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+    animation-duration: infinite;
+}
+
+canvas {
+    animation-name: example;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+}
+
+@keyframes example {
+    
+    from {box-shadow : 1px 1px 38px red;}
+    to {box-shadow : 1px 1px 38px yellow;}
+}
+
+@keyframes buttonAnimation {
+    from {background-color: green;}
+    to {background-color: red;}
+}
+
+@keyframes borderAnimation {
+    from {background-color: aquamarine;}
+    to {background-color: salmon}
+}
